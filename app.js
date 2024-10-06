@@ -6,3 +6,5 @@ if (amount < 10) {
   console.log("bigger number");
 }
 console.log(`hey its my node program`);
+
+
