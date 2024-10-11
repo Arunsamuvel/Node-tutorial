@@ -2,7 +2,16 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  res.write("Welcome to my home page");
-  res.end();
+  if (req.url === "/") {
+    res.end("Welcome to my home page");
+  }
+  if (req.url === "/about") {
+    res.end("here is our about page");
+  }
+  res.end(
+    `<h1>Oops!</h1>
+    <p>this page about to working please go back to home</p>
+    <a href="/">Back Home</a>`
+  );
 });
-server.listen(5000);
+server.listen(5002);
