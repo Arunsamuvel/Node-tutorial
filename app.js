@@ -7,4 +7,5 @@ if (amount < 10) {
 }
 console.log(`hey its my node program`);
 
+console.log(4*5);
 
