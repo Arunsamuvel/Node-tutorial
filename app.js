@@ -7,5 +7,12 @@ if (amount < 10) {
 }
 console.log(`hey its my node program`);
 
+setTimeout(()=>{
+  console.log("Timeout callback");
+  
+})
+
 console.log(4*5);
+
+
 
